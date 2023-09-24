@@ -1,0 +1,118 @@
+/* 파랑:#0074e9 빨강:#e7223d */
+h1 {text-align:center; margin:50px auto 10px;}
+h1 a {}
+h1 a img {width:200px}
+main {
+    width:500px;
+    margin:0 auto;
+}
+main #loginFrm {
+    border-bottom:1px solid #ccc;
+    margin-bottom:20px; padding-bottom:20px;
+}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {}
+main #loginFrm fieldset ul li {
+    border:1px solid #ccc; background:#fff;
+    display:flex; flex-flow:row nowrap;
+    margin-bottom:10px;
+    position:relative;
+}
+main #loginFrm fieldset ul li.error {
+    color:#e7223d;
+    padding-bottom:10px;
+    display:none;
+    border:0;
+    font-size:0.9rem;
+}
+main #loginFrm fieldset ul li.id_error {}
+main #loginFrm fieldset ul li.pw_error {}
+main #loginFrm fieldset ul li span {}
+main #loginFrm fieldset ul li span.id_bg {
+    border-right:1px solid #ccc;
+    padding:20px; width:50px;
+    background-color:#f5f5f5;
+    position:relative;
+}
+main #loginFrm fieldset ul li span.id_bg::after {
+    content:''; display:block;
+    background-image: url(../images/icon.svg);
+    background-position:0 0;
+    width:21px; height:21px;
+    position:absolute; left:14px; top:17px;
+}
+main #loginFrm fieldset ul li span.pw_bg {
+    border-right:1px solid #ccc;
+    padding:20px; width:50px;
+    background-color:#f5f5f5;
+    position:relative;
+}
+main #loginFrm fieldset ul li span.pw_bg::after {
+    content:''; display:block;
+    background-image: url(../images/icon.svg);
+    background-position:-21px 0;
+    width:21px; height:21px;
+    position:absolute; left:14px; top:15px;
+}
+main #loginFrm fieldset ul li span.pw_show_hide {
+    background-image: url(../images/icon.svg);
+    background-position:-105px 0;
+    width:21px; height:21px;
+    position:absolute; right:13px; top:15px;
+}
+main #loginFrm fieldset ul li span input {
+    width:447px; height:52px;
+    border:0;
+    padding-left:10px;
+}
+main #loginFrm fieldset ul li span input::placeholder {
+    font-size:0.95rem;
+    color:#aaa;
+}
+main #loginFrm fieldset ul li span input[name=user_id] {}
+main #loginFrm fieldset ul li span input[name=user_pw] {}
+main #loginFrm fieldset .btm {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    padding-top:5px; padding-bottom:15px;
+}
+main #loginFrm fieldset .btm p {}
+main #loginFrm fieldset .btm p label {}
+main #loginFrm fieldset .btm p label input[type=checkbox] {appearance:none;}
+main #loginFrm fieldset .btm p label input[type=checkbox] + span::before {
+    background-color:#fff;
+    border:1px solid #ccc;
+    content:''; display:inline-block;
+    width:17px; height:17px;
+    background-image: url(../images/icon.svg);
+    background-position:-65px -22px;
+    margin-right:5px;
+}
+main #loginFrm fieldset .btm p label input[type=checkbox]:checked + span::before {
+    background-position:-84px -21px;
+}
+main #loginFrm fieldset .btm p label span {}
+main #loginFrm fieldset .btm .idpw_search {color:#0074e9;}
+main #loginFrm fieldset .btm .idpw_search::after {
+    content:''; display:inline-block;
+    width:8px; height:15px;
+    background-image: url(../images/icon.svg);
+    background-position: -104px -21px;
+    margin-left:5px;
+}
+main #loginFrm fieldset #login_btn {
+    background:#0074e9; color:#fff;
+    width:100%; padding:20px 0;
+    box-shadow:0 2px 0 #024589;
+}
+main .join_link {
+    border:1px solid #ccc; background:#fff; color:#0074e9;
+    padding:20px 0; width:100%;
+    display:block; text-align:center;
+    box-shadow:0 2px 0 #eee;
+}
+footer {
+    text-align:center;
+    color:#333 font-size: 0.85rem;
+    margin-top:20px;
+}
